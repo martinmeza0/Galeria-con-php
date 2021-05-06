@@ -1,0 +1,41 @@
+.fotos
+    .contenedor
+        max-width: 1000px
+        width: 90%
+        margin: auto
+        display: flex
+        flex-direction: row
+        flex-wrap: wrap
+        justify-content: space-between
+        &:hover .thumb:not(:hover)
+            filter: grayscale(100%)
+            background-color: rgba(#000, .3)
+
+    .thumb
+        box-shadow: 2px 2px 3px rgba(0,0,0,.8)
+        margin-bottom: 20px
+        border: 1px solid #ccc
+        width: 22%
+        transition: all .3s
+        a
+            display: block
+            img
+                width: 100%
+                vertical-align: top
+
+                
+    .paginacion
+        width: 100%
+        margin-top: 20px
+        // overflow: hidden
+        a
+            color: #80ffdb
+            display: inline-block
+            padding: 15px 20px
+            border-radius: 50px
+            border: 1px solid rgba(#ccc, .2)
+            transition: all .3s
+            &:hover
+                border: 1px solid #fff
+                text-decoration: none
+                
