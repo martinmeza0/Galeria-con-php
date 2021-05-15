@@ -9,13 +9,15 @@
         justify-content: space-between
         &:hover .thumb:not(:hover)
             filter: grayscale(100%)
-            background-color: rgba(#000, .3)
+            border: 1px solid #000
+            
 
     .thumb
         box-shadow: 2px 2px 3px rgba(0,0,0,.8)
-        margin-bottom: 20px
         border: 1px solid #ccc
         width: 22%
+        margin-bottom: 10px
+        overflow: hidden
         transition: all .3s
         a
             display: block

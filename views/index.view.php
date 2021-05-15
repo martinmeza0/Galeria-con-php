@@ -20,33 +20,23 @@
 
     <section class="fotos">
         <div class="contenedor">
-            <div class="thumb">
-                <a href="#">
-                    <img src="img/1.jpg" alt="">
-                </a>
-            </div>
-
-            <div class="thumb">
-                <a href="#">
-                    <img src="img/1.jpg" alt="">
-                </a>
-            </div>
-
-            <div class="thumb">
-                <a href="#">
-                    <img src="img/1.jpg" alt="">
-                </a>
-            </div>
-
-            <div class="thumb">
-                <a href="#">
-                    <img src="img/1.jpg" alt="">
-                </a>
-            </div>
-            
+            <?php foreach($fotos as $foto):?>
+                <div class="thumb">
+                    <a href="foto.php?id=<?php echo $foto['id']; ?>">
+                        <img src="fotos/<?php echo $foto['imagen']; ?>" alt="<?php echo $fotos['titulo'] ?>">
+                    </a>
+                </div>
+            <?php endforeach;?>
+        </div>
+        <div class="contenedor">
             <div class="paginacion">
-                <a href="#" class="izquierda"><i class="fas fa-arrow-left"></i></a>
-                <a href="#" class="derecha"><i class="fas fa-arrow-right"></i></a>
+                <?php if ($pagina_actual > 1):?>
+                    <a href="index.php?p=<?php echo $pagina_actual - 1; ?>" class="izquierda"><i class="fas fa-arrow-left"></i></a>
+                <?php endif;?>
+
+                <?php if ($total_paginas != $pagina_actual):?>
+                    <a href="index.php?p=<?php echo $pagina_actual + 1; ?>" class="derecha"><i class="fas fa-arrow-right"></i></a>
+                <?php endif;?>
             </div>
         </div>
     </section>
