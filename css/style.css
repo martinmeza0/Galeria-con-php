@@ -41,6 +41,24 @@ header .contenedor .logo i {
   font-size: 40px;
 }
 
+header .contenedor .boton {
+  display: block;
+  margin-left: auto;
+  color: #c9cee1;
+  font-size: 20px;
+  padding: 10px 20px;
+  border: 2px solid rgba(201, 206, 225, 0.2);
+  border-radius: 10px;
+  text-decoration: none;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  font-family: 'Open Sans';
+}
+
+header .contenedor .boton:hover {
+  border: 2px solid #c9cee1;
+}
+
 .fotos .contenedor {
   max-width: 1000px;
   width: 90%;

@@ -15,9 +15,9 @@
         <div class="contenedor">
             <h1>Mi galeria</h1>
             <div class="logo"><i class="far fa-image"></i></div>
+            <a class="boton" href="subir.php"> Subir una imagen <i class="fas fa-upload"></i></a>
         </div>
     </header>
-
     <section class="fotos">
         <div class="contenedor">
             <?php foreach($fotos as $foto):?>
