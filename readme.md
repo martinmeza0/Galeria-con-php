@@ -9,4 +9,4 @@
 ![](vista_previa.gif)
 ------------
 
-HTML - SASS - PHP
+HTML - SASS - PHP - MySQL
